@@ -1,145 +1,142 @@
 ## 📌 What is EC2?
 
-Amazon EC2 (Elastic Compute Cloud) is a core AWS service that provides scalable virtual servers in the cloud.
+Amazon EC2 (Elastic Compute Cloud) is a service that provides virtual servers in the cloud.
 
-It eliminates the need to purchase and manage physical hardware by allowing users to provision compute resources on demand. Instances can be launched within minutes, configured as required, and scaled based on workload.
+Instead of setting up physical machines, EC2 allows users to quickly create and manage servers based on their needs. These servers can be started, stopped, and scaled at any time.
 
 ---
 
 ### 🔹 Key Points
 
-- Provides on-demand compute capacity
-- Supports horizontal and vertical scaling
-- Follows a pay-as-you-go pricing model
-- Supports multiple operating systems (Linux, Windows)
-- Integrates seamlessly with other AWS services
+- Provides virtual servers (instances)
+- Can be scaled up or down easily
+- Follows a pay-as-you-use model
+- Supports Linux and Windows operating systems
+- Works with other AWS services like S3 and RDS
 
 ---
 
 ### 🏢 Real-Time Usage
 
-- Hosting web applications and APIs  
-- Running backend services (Java, Node.js, Python)  
-- Managing CI/CD tools such as Jenkins  
-
+- Hosting websites and applications  
+- Running backend services  
+- Setting up tools like Jenkins  
+- Performing background or batch tasks  
 
 ---
 
 ## ⚙️ EC2 Instance Types
 
-Instance types define the hardware configuration of an EC2 instance, including CPU, memory, storage, and networking capacity. Selection depends on workload requirements.
+Instance types define the size and capacity of the server, such as CPU, memory, and storage.
+
+Different applications require different types of resources, so choosing the right instance type is important.
 
 ---
 
 ### 🔹 1. General Purpose
 
-- Balanced compute, memory, and networking
-- Examples: `t2`, `t3`, `t3a`
+- Balanced CPU and memory  
+- Examples: `t2`, `t3`, `t3a`  
 
-**Use cases:**
-- Web servers  
-- Small to medium applications  
+**Used for:**
+- Web applications  
+- Small to medium workloads  
 
 ---
 
 ### 🔹 2. Compute Optimized
 
-- High CPU performance
-- Examples: `c5`, `c6`
+- Higher CPU performance  
+- Examples: `c5`, `c6`  
 
-**Use cases:**
-- Compute-intensive applications  
-- High-performance APIs  
-- Batch processing workloads  
+**Used for:**
+- Applications that need more processing power  
+- Batch jobs and high-performance tasks  
 
 ---
 
 ### 🔹 3. Memory Optimized
 
-- High memory capacity
-- Examples: `r5`, `r6`
+- Higher memory (RAM)  
+- Examples: `r5`, `r6`  
 
-**Use cases:**
+**Used for:**
 - Databases  
-- In-memory caching systems (e.g., Redis)  
-- Real-time data processing  
+- Applications that store large data in memory  
 
 ---
 
 ### 🔹 4. Storage Optimized
 
-- High disk throughput and IOPS
-- Examples: `i3`, `d2`
+- Better disk performance  
+- Examples: `i3`, `d2`  
 
-**Use cases:**
-- Big data applications  
-- Data warehousing  
-- High-frequency read/write workloads  
+**Used for:**
+- Data-heavy applications  
+- Frequent read/write operations  
 
 ---
 
 ### 🔹 5. GPU Instances
 
-- GPU-based compute capability
-- Examples: `p3`, `g4`
+- Includes GPU for advanced processing  
+- Examples: `p3`, `g4`  
 
-**Use cases:**
-- Machine learning and AI workloads  
-- Graphics rendering and video processing  
+**Used for:**
+- Machine learning  
+- AI and video processing  
 
 ---
 
 ## 💰 EC2 Purchasing Options
 
-AWS provides multiple pricing models to optimize cost based on workload characteristics.
+AWS provides different pricing options to manage cost effectively.
 
 ---
 
 ### 🔹 1. On-Demand
 
-- Pay per usage (hourly or per second)
-- No long-term commitment
+- Pay only for what you use  
+- No long-term commitment  
 
-**Best suited for:**
-- Development and testing  
-- Short-term or unpredictable workloads  
+**Best for:**
+- Testing and short-term usage  
 
 ---
 
 ### 🔹 2. Reserved Instances (RI)
 
-- Commitment for 1 or 3 years
-- Significant cost savings (up to ~70%)
+- Commit for 1 or 3 years  
+- Lower cost compared to on-demand  
 
-**Best suited for:**
-- Stable, long-running production workloads  
+**Best for:**
+- Long-running applications  
 
 ---
 
 ### 🔹 3. Spot Instances
 
-- Deep discounts (up to ~90%)
-- Can be interrupted by AWS at any time
+- Very low cost  
+- Can be stopped anytime by AWS  
 
-**Best suited for:**
-- Fault-tolerant applications  
-- Batch processing and CI/CD workloads  
+**Best for:**
+- Non-critical tasks  
+- Batch jobs  
 
 ---
 
 ### 🔹 4. Savings Plans
 
-- Flexible pricing model based on committed usage
-- Applies across instance families and regions
+- Flexible pricing option  
+- Based on usage commitment  
 
 ---
 
 ### 🔹 5. Dedicated Hosts / Instances
 
-- Physical servers dedicated to a single customer
+- Physical server dedicated to one user  
 
-**Best suited for:**
-- Compliance requirements  
-- Licensing constraints  
+**Best for:**
+- Special compliance or licensing needs  
 
 ---
