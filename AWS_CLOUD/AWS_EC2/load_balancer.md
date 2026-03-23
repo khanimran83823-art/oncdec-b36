@@ -27,7 +27,7 @@ Instead of sending all requests to a single server, it ensures that traffic is s
 - Works at Layer 7 (HTTP/HTTPS)  
 - Can route traffic based on:
   - URL path (`/api`, `/login`)  
-  - Hostname (`api.example.com`)  
+  - Hostname (`api.demo.com`)  
 
 **Used for:**
 - Web applications  
