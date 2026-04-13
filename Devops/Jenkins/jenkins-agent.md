@@ -17,6 +17,7 @@ vim .ssh/authorized_keys
 - also install java
   
 ````
+sudo apt update
 sudo apt install fontconfig openjdk-21-jre -y
 ````
 <img width="1063" height="118" alt="image" src="https://github.com/user-attachments/assets/4c7cfd9f-9602-4681-a3a1-a99b3e16cd9e" />
